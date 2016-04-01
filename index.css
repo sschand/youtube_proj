@@ -1,3 +1,28 @@
+
+form input#search{
+	width: 425px;
+}
+
+#bell{
+	border: none;
+}
+
+.top{
+	margin-top: 15px;
+}
+
+#vid{
+	padding: 0px !important;
+}
+
+#video_img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.well{
+	background: none;
+}
 #sideheader{
 	margin-top: 0;
 }

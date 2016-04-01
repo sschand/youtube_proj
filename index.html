@@ -5,30 +5,72 @@
   <title>youtube_prj</title>
   <link rel="stylesheet" style="text/css" href="index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script type="text/javascript" href="index.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  </script>
 
 </head>
 <body>
   <div class="container">
-    <div class= "row">
-      <div class="col-sm-2">youtube image</div>
-      <div class="col-sm-6">
-      	<input type="text">
-      	<input type="submit" value="Q"></input>
+    <div class= "row" data-position="fixed">
+      <div class="col-sm-2"><i class="fa fa-bars"><a href="#"><img src="img/logo.png" alt="icon"></a></i></div>
+      <div class="col-sm-6 top">
+      	<form>
+	      	<input id="search" type="text">
+	      	<button><i class="fa fa-search"></i></button>
+      	</form>
       </div>
-      <div class="col-sm-2">c</div>
-      <div class="col-sm-2">d</div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2 top">
+      		<button>Upload</button>
+      		<button id="bell"><i class="fa fa-bell-o"></i></button>
+      		<button><i class="fa fa-circle-thin"></i></button>
+      </div>
 	</div>
 
-  	<div class="container col-sm-8">well	
-  		<div class="well">video image</div>
-  		<div class="well">like bar</div>
-  		<div class="well">info</div>
-  		<div class="well">comments</div>
+  	<div class="container col-sm-8">	
+  		<div class="well" id="vid"><img id="video_img" src="img/video.png" alt="video"></div>
+
+  		<div class=" well">
+  			<!-- <div class="col-sm-6"> -->
+	  			<div class="media" >
+	  				<h2>Taylor Swift - Out Of The Woods</h2>
+					<a class="media-left" href="#">
+						<img class="media-object" src="img/channelicon.png" alt="channel">
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading"><a href="#">channel name</a></h4>
+						<div class="btn-group" role="group" aria-label="...">
+							<button type="button" class="btn btn-danger">Subscribe</button>
+							<button type="button" class="btn btn-default">12,123,456,123</button>
+						</div>
+					</div>
+				</div> <!--end media-->
+				<div class="row">
+					<div class="col-sm-5">
+						<button><i class="fa fa-plus"></i> Add To</button>
+						<button><i class="fa fa-share"></i> Share</button>
+						<button><i class="fa fa-ellipsis-h"></i> More</button>
+					</div>
+					<div class="col-sm-3">
+						<button><i class="fa fa-plus"></i> 123,123</button>
+						<button><i class="fa fa-plus"></i> 344</button>
+					</div>
+				</div>
+
+			<!-- </div> -->
+  			<!-- <div class="col-sm-2">asdasd</div> -->
+
+
+  		</div>
+
+      <div class="well">
+      seema
+      </div>
+      <div class="well">
+      comments
+      </div>
   	</div>
 
   	<div class="well col-sm-4">
