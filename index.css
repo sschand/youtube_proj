@@ -1,0 +1,30 @@
+#sideheader{
+	margin-top: 0;
+}
+
+#upnext{
+	display: inline-block;
+	width: 100px;
+}
+
+#autoplay{
+	display: inline-block;
+	margin-left: 120px;
+}
+
+.media img{
+	width: 120px;
+	height: 67px;
+}
+
+.media-body h5{
+	font-weight: bold;
+	font-size: 90%;
+}
+
+.media-body h6{
+	margin-bottom: 2px;
+	margin-top: 0;
+	font-size: 75%;
+	color: grey;
+}
