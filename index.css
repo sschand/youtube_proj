@@ -18,3 +18,7 @@ form input#search{
 	max-height: 100%;
 	max-width: 100%;
 }
+
+.well{
+	background: none;
+}
