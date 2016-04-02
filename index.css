@@ -31,15 +31,19 @@ form#searchform{
 }
 
 
-.bell{
+i.bell{
 	border: none;
 	margin-right: 18px;
 	margin-left: 18px;
+	font-size: 125%;
+	color: grey;
+	font-weight: bold;
 }
 
 .top{
 	float: right;
 	margin-top: 12px;
+	margin-right: -15px;
 }
 
 #vid{
@@ -428,7 +432,6 @@ span.showBodyOfDisplayOnHover {
 .header{
 	height: 50px;
 	width: 100%;
-	border-bottom: 1px solid grey;
 	margin-bottom: 10px;
 }
 
@@ -458,3 +461,11 @@ button#uploadbtn:hover {
 	background-color: #C4C3C3;
 }
 
+#bellbtn{
+	color: black;
+}
+
+img#usericonbtn{
+	display: inline;
+	height: 27px;
+}
