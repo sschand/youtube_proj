@@ -1,5 +1,8 @@
 .maincont{
-	width: 100%;
+	background-color: #f5f5f5 !important;
+	width: 100% !important;
+	/*margin: 0px 30px !important;*/
+    padding: 0% 8% !important;
 }
 
 form input#search{
@@ -38,6 +41,7 @@ i.bell{
 	font-size: 125%;
 	color: grey;
 	font-weight: bold;
+
 }
 
 .top{
@@ -57,6 +61,7 @@ i.bell{
 
 .well{
 	background: none;
+	background-color: white !important;
 }
 
 .sidebar{
@@ -165,10 +170,17 @@ h6#autoplay{
 }
 #title h5{
 	display: inline-block;
-	padding-left: 164px;
+	border-bottom: 3px solid rgb(22,122,198);
 	font-size: 25px;
 	vertical-align: bottom;
 	margin-bottom: -5px;
+	color: gray;
+}
+#h5head{
+	width: 200px;
+	display: inline-block;
+	padding-top: 20px;
+	float:right;
 }
 
 #inline{
@@ -200,25 +212,40 @@ h6#autoplay{
 }
 
 
-#Show{
+#show{
 	text-align: center;
 
 }
-#ShowMore{
+/*#showMore{
 	border-color: white;
 }
-
-.btn btn-default{
+*/
+.btn .btn-default{
 	right: auto;
 }
-.Hidden{
-	visibility: hidden;
+.moreinfo{
+	display: none;
+	padding: 2% 0 0 0;
 }
+
 .topic{
 
 }
 
+#publishon .line{
+	margin-bottom: 2px;
+	margin-top: 7px;
+}
+#publishon a{
+	text-decoration: none;
+	color: black;
+}
+#publishon a:hover{
+	text-decoration: underline;
+	color: #337ab7;
+}
 
+/********* BEGIN COMMENTS SECTION CSS ************/
 #left .media img{
     width: 55px;
     height: 55px;
@@ -230,13 +257,14 @@ h6#autoplay{
     color: silver;
     border-radius: 2px;
 }
-#line{
+.line{
     border-top: .1em solid silver;
     margin: 25px 0px;
 }
 #comments_section{
     margin-top: 20px;
 }
+
 #comments_section .media-body a:hover,.reply_content a:hover{
 	text-decoration: none;
 	color: #337ab7;
@@ -252,7 +280,7 @@ h6#autoplay{
 	color: silver;
 }
 .blue_text{
-	color: #337ab7;
+	color: #337ab7 !important;
 }
 .reply_btn{
     border: none;
@@ -261,7 +289,7 @@ h6#autoplay{
 #comments_section .respond_group a{
 	color: lightgrey;
 }
-#comments_section .media-middle {
+#comment .media-middle {
     vertical-align: top;
 }
 #comments_section .respond_group:hover a:hover{
@@ -269,6 +297,7 @@ h6#autoplay{
 }
 .reply_content{
 	padding-left: 2%;
+	padding-right: 0px !important;
 }
 
 .reply_content .media .media-left img {
@@ -278,20 +307,38 @@ h6#autoplay{
 #comments_section .media-body p{
     margin: 2px 0px;
 }
-/*.fa-thumbs-up, .fa-thumbs-down{
-
-}*/
-
-/*@media (min-width: 1000px) {
-
-}
-*/
 #comments_section .report{
 	float: right;
 }
 #comments_section .report a:hover{
 	color: grey;
 }
+#comment_form{
+	display: none;
+}
+#comment_form textarea{
+	width: 100%;
+	height: 70px;
+}
+#comment_form textarea:focus {
+	outline: 0;
+
+}
+#comment_form #form_buttons{
+	padding-right: 0px;
+    text-align: right;
+}
+#comment_form button {
+	/*float: right;
+    margin-right: -23px;*/
+}
+#post_comment{
+	opacity: 0.4;	
+	cursor: default;
+}
+
+
+/********** END COMMENTS SECTION CSS ***************/
 
 .media-body h5:hover{
 	color: #44A0D5;
@@ -432,7 +479,8 @@ span.showBodyOfDisplayOnHover {
 .header{
 	height: 50px;
 	width: 100%;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
+	margin: 0px 0px 10px 0px !important;
 }
 
 

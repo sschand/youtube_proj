@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>youtube_prj</title>
-  <link rel="stylesheet" style="text/css" href="index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="jquery.dropdown.css" />
-  <script type="text/javascript" src="jquery.dropdown.js"></script>
-  
 
-  <script type="text/javascript" href="index.js">
-  	$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();  
-
-});
-
-  	
-
-  </script>
-
-
+	<meta charset="UTF-8">
+	<title>youtube_prj</title>
+	<link rel="stylesheet" style="text/css" href="index.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="jquery.dropdown.css" />
+	<script type="text/javascript" src="jquery.dropdown.js"></script>
+  	<script type="text/javascript" href="index.js">
+	  	$(document).ready(function(){
+	    $('[data-toggle="tooltip"]').tooltip();   
+	    $('[data-toggle="popover"]').popover(); 
+		});
+  	</script>
 
 </head>
 <body>
-  <div class="container maincont">
     <div class= "row header" data-position="fixed">
       <div class="col-sm-2"><i class="fa fa-bars headerbars"><a href="#"><img src="img/logo.png" alt="icon" id="ytlogo">
         </a></i></div>
       <div class="col-sm-6">
-      	<form id="searchform">
-	      	<input id="search" type="text">
-	      	<button id="searchbtn"><i class="fa fa-search spyglass"></i></button>
-      	</form>
+        <form id="searchform">
+          <input id="search" type="text">
+          <button id="searchbtn"><i class="fa fa-search spyglass"></i></button>
+        </form>
       </div>
       <div class="col-sm-2"></div>
       <div class="col-sm-2 top">
       		<a href="" style="text-decoration:none"><button id="uploadbtn">Upload</button></a>
       		<a href="" style="text-decoration:none" id="bellbtn"><i class="fa fa-bell-o bell"></i></a>
-      		
+     		
           <a href="">
           <img src="img/usericon.png" alt="UserIcon" class="usericonbtn"
           class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,33 +52,34 @@
        </div>    
 	</div>
 
-  	<div id="left" class="container col-sm-8">
+  <div class="container maincont">
+
+
+  	<div id="left" class="col-sm-8">
 
   		<div class="well" id="vid"><img id="video_img" src="img/video.png" alt="video"></div>
 
   		<div class=" well">
   			<!-- <div class="col-sm-6"> -->
-
-
-
-
 	  			<div class="media" id="media_pad" >
 	  				<h2>Taylor Swift - Out Of The Woods</h2>
 	  				<div id="title">
 						<a id="inline" class="media-left" href="#">
 						<div id="views">
-							<img class="media-object" src="img/channelicon.png" alt="channel"></a>
+							<img class="media-object" src="img/channelicon.png" alt="channel" data-toggle="popover" data-trigger="hover" data-content="Taylor Swift Image"img/usericon.png""></a>
 							<div id="inline2" class="media-body">
 								<div id="taylor">
-								<h4 class="media-heading"><a id="taylor.hover" href="#">TaylorSwiftVEVO</a><i class="fa fa-check-square"></i></h4>
-								
+								<h4 class="media-heading">
+								<a href="#" data-toggle="popover" data-trigger="hover" data-content="Image of Taylor Swift! Image of Taylor Swift! Image of Taylor Swift!">TaylorSwiftVEVO</a><i class="fa fa-check-square"></i></h4>
 								<div class="btn-group" role="group" aria-label="...">
 									<button type="button" class="btn btn-danger">Subscribe</button>
 									<button type="button" class="btn btn-default">12,123,456,123</button>
 								</div>
 								</div>
 							</div>
+							<div id="h5head">
 							<h5>120,495,094,039</h5>
+							</div>
 						</div>
 					</div>
 				</div> <!--end media-->
@@ -110,27 +104,43 @@
       <div class="well" id = "publishon">
       <!-- seema -->
         <h4>Published on Dec 31, 2015</h4>
-        <p> Check out Taylor's new vidoe "Out of the Woods" off her multiplatinum release 1989 available now on iTunes
+        <p> Check out Taylor's new video "Out of the Woods" off her multiplatinum release 1989 available now on iTunes
         <a href=" ">http://www.smarturl.it/TS1989​</a>
         </p>
-        <div id= "Show">
-        <button class="btn btn-default"  id="ShowMore" data-toggle="collapse" drole="button">Show More</button>
+        <a href="#"> http://vevo.ly/03TNT0</a>
+        
+
+         <div class ="moreinfo">
+              <div class="row">
+                 <div class="col-sm-2"><p class="Category"><b>Category</b></p></div>
+                 <div class="col-sm-10"><span class= "data"><a href=""> Music</a></span></div>
+              </div>
+
+              <div class="row">
+                  <div class="col-sm-2"><p class="License"><b>License</b></p></div>
+                  <div class="col-sm-10"><span class= "data"> Standard YouTube License</span></div>
+              </div>
+              <div class="row">
+                 <div class="col-sm-2"><p class="Music"><b>Music</b></p></div>
+                 <div class="col-sm-10"><span class="data"> "Out of The Woods" by Taylor Swift <a href="#">Listen add-free with YouTube red</a></span></div> 
+               </div>
+             
+        </div>
+        <div class="line"></div>
+        <div id="show">          
+          <!-- <button class="btn btn-sm btn-default" id="showMore" role="button">SHOW MORE</button> -->
+          SHOW MORE
         </div>
       </div>
 
-       <div class ="Hidden">
-         <a href="#"> http://vevo.ly/03TNT0</a>
-         <p class="Category"><b>Category</b> <span class= "data"> Music</span></p>
-         <p class="License"><b>License</b><span class= "data"> Standard You Tube License</span></p>
-         <p class="Music"><b>Music</b><span class=" data"> "Out of The Woods" by Taylor Swift Listen add-free with You Tube red</span></p>
-       </div>
+      
 
 
 
 
 
 
-      <div class="well">
+      <div id="comment" class="well">
         <div>
           <span><strong>COMMENTS •</strong> 126,373</span>
         </div>
@@ -146,10 +156,21 @@
                 <div id="comment_box">
                     <span>Add a public comment...</span>
                 </div>
+
+                <!-- <div id="comment_box"> -->
+                  <form id="comment_form" action="">                    
+                      <textarea id="comment_text"></textarea>
+                      <div class="col-sm-8"></div> 
+                      <div id="form_buttons" class="col-sm-4">                         
+                          <button id="cancel_button" class="btn btn-sm btn-default" type="buton">Cancel</button>
+                          <button disabled id="post_comment" class="btn btn-sm btn-primary" type="submit">Post</button>
+                      </div>
+                  </form>
+                <!-- </div> -->
             </div>
         </div>
 
-        <div id="line"></div>
+        <div class="line"></div>
 
         <!-- Top comments btn group -->
         <div id="top_comment" class="btn-group">
@@ -199,6 +220,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -218,6 +240,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -237,6 +260,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -256,6 +280,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -278,6 +303,7 @@
                             </div>
                             <div class="media-body">
                                 <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                 <p>I'm 97% sure she found a way into Narnia﻿</p>
                                 <div class="respond_group btn-group" role="group" aria-label="...">
                                     <a href=""></i>Reply • </a>
@@ -291,7 +317,29 @@
                     </div>
                 </div>
 
+
+
             </div>
+
+             <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object" src="img/channelicon.png" alt="commentor">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                    <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
+                    <p>I'm 97% sure she found a way into Narnia﻿</p>
+                    <div class="respond_group btn-group" role="group" aria-label="...">
+                        <a href=""></i>Reply • </a>
+                        <span class="blue_text"> 490 </span>
+                        <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                        <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                    </div>
+
+                </div>
+              </div>    
         </div>
 
 
@@ -530,10 +578,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
   $(document).ready(function(){
+
+      // Hover on reply link and buttons
       $(".respond_group").hover(function(){
-          $(".respond_group a").css("color", "grey");
+          $(this +" a").css("color", "grey");
       }, function(){
-          $(".respond_group a").css("color", "lightgrey");
+          $(this +" a").css("color", "lightgrey");
       });
 
       $(".respond_group a").hover(function(){
@@ -544,6 +594,7 @@
       });
 
 
+      // Show all replies/ Hide all replies
       $(".view_replies").on("click", function(){
 
           var collapse_id = $(this).attr("href");
@@ -551,15 +602,50 @@
           var collapse_status = $(collapse_id).attr("class");
 
           if(collapse_status == "collapse"){
-              $(this).html("Hide all replies <i class='fa fa-chevron-up'></i>");
+              $(this).html("Hide all replies <i class='fa fa-chevron-up'></i>").css("color", "#337ab7");
 
           }else if(collapse_status == "collapse in"){
               var reply_org = $(this).attr("reply-org");
               $(this).html(reply_org);
           }
+      });
+
+      // Add new comment
+      $("#comment_box").on("click", function(){
+          $(this).hide();
+          $(this).next().show();          
+      });
+
+       $("#cancel_button").on("click", function(e){
+        e.preventDefault();
+          $("#comment_form").hide();
+          $("#comment_box").show();
+      });
+
+      // When adding comments, check to see if text area is empty, if not empty, enable post button, otherwise don't allow blank posts
+      $("#comment_text").on("keydown",function(e){
+          var text = $(this).val();
+
+          if(text && text.length > 0){
+              $("#post_comment").css("opacity","1").css("cursor","pointer").prop("disabled", false); 
 
 
-          // $(this).html()
+          }else{
+            $("#post_comment").css("opacity","0.4").css("cursor","default").prop("disabled", true); 
+          }      
+
+      });
+
+      // SHOW MORE information about the video
+
+      $("#show").on("click", function(){
+       if ( $( ".moreinfo" ).is( ":hidden" ) ) {
+          $( ".moreinfo" ).show();
+          $(this).text("SHOW LESS");
+        } else {
+          $( ".moreinfo" ).hide();
+           $(this).text("SHOW MORE");
+        }
       });
   });
 </script>
