@@ -53,3 +53,20 @@ form input#search{
 	font-size: 75%;
 	color: grey;
 }
+#Show{
+	text-align: center;
+
+}
+#ShowMore{
+	border-color: white;
+}
+
+.btn btn-default{
+	right: auto;
+}
+.Hidden{
+	visibility: hidden;
+}
+.topic{
+
+}
