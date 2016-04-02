@@ -1,17 +1,50 @@
-.container{
+.maincont{
 	background-color: #f5f5f5;
 	width: 100% !important;
 }
+
 form input#search{
-	width: 425px;
+	width: 582px;
+	height: 30px;
+	display: inline;
+	margin-right: -5px;
+	margin-top: 12px;
+	border-radius: 1px solid grey;
+	border-style: groove;
+	vertical-align: top;
 }
 
-#bell{
+#searchbtn{
+	height: 29px;
+	width: 66px;
+	margin-top: 12px;
+}
+
+i.spyglass{
+	display: inline;
+	width: auto;
+	height: 30px;
+}
+
+form#searchform{
+	padding-left: 5px;
+	width: 660px;
+}
+
+
+i.bell{
 	border: none;
+	margin-right: 18px;
+	margin-left: 18px;
+	font-size: 125%;
+	color: grey;
+	font-weight: bold;
 }
 
 .top{
-	margin-top: 15px;
+	float: right;
+	margin-top: 12px;
+	margin-right: -15px;
 }
 
 #vid{
@@ -24,7 +57,7 @@ form input#search{
 }
 
 .well{
-	background: none !important;
+	background: none;
 }
 
 .sidebar{
@@ -186,6 +219,7 @@ h6#autoplay{
 
 }
 
+
 /********* BEGIN COMMENTS SECTION CSS ************/
 #left .media img{
     width: 55px;
@@ -266,11 +300,13 @@ h6#autoplay{
     margin-right: -23px;*/
 }
 #post_comment{
-	opacity: 0.4;
+	opacity: 0.4;	
+	cursor: default;
 }
 
 
 /********** END COMMENTS SECTION CSS ***************/
+
 .media-body h5:hover{
 	color: #44A0D5;
 }
@@ -406,3 +442,46 @@ span.showBodyOfDisplayOnHover {
 /*toggle switch madness ends/
 /**/
 
+
+.header{
+	height: 50px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+img#ytlogo{
+	width:74px;
+	height:40px;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+
+i.headerbars{
+	margin-top: 10px;
+}
+
+button#uploadbtn{
+	font-size: 80%;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 4px 8px;
+	border: 0xp groove grey;
+	color: black;
+}
+
+button#uploadbtn:hover {
+	background-color: #C4C3C3;
+}
+
+#bellbtn{
+	color: black;
+}
+
+img#usericonbtn{
+	display: inline;
+	height: 27px;
+}
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
