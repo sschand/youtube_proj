@@ -80,6 +80,91 @@ h6#autoplay{
 	color: grey;
 }
 
+
+
+.col-sm-5 button{
+	border:none;
+	background: none;
+	padding-top: 10px;
+}
+
+.col-sm-3 button{
+	border: none;
+	background:none;
+	padding-top: 18px;
+}
+
+#box{
+	width: 300px;
+	margin-right: 238px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	color:gray;
+}
+#box button{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#top_border{
+	border-top: 1px solid gray;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#media_pad{
+	padding-bottom: 10px;
+}
+
+#media_pad h2{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#thumb button{
+	color: gray;
+	padding-top: 6px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+#title h5{
+	display: inline-block;
+	padding-left: 164px;
+	font-size: 25px;
+	vertical-align: bottom;
+	margin-bottom: -5px;
+}
+
+#inline{
+	display: inline-block;
+}
+#inline2{
+	display: inline-block;
+	width: 200px;
+}
+
+#test button{
+	display: inline-block;
+}
+
+#inline2 a{
+	color: gray;
+}
+
+#inline2 i{
+	color: gray;
+	padding-left: 5px;
+}
+
+
+
+#taylor{
+	width: 300px;
+
+}
+
+
 #Show{
 	text-align: center;
 
@@ -310,3 +395,4 @@ span.showBodyOfDisplayOnHover {
 /**/
 /*toggle switch madness ends/
 /**/
+
