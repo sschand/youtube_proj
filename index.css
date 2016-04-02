@@ -38,7 +38,7 @@ form input#search{
 }
 
 #infobtn{
-	
+
 	display: inline-block;
 	vertical-align: top;
 }
@@ -79,6 +79,25 @@ h6#autoplay{
 	font-size: 75%;
 	color: grey;
 }
+
+#Show{
+	text-align: center;
+
+}
+#ShowMore{
+	border-color: white;
+}
+
+.btn btn-default{
+	right: auto;
+}
+.Hidden{
+	visibility: hidden;
+}
+.topic{
+
+}
+
 
 #left .media img{
     width: 55px;
@@ -182,14 +201,14 @@ h6#autoplay{
  a.hideDisplay{
   position: relative; /* This makes everything work.*/
   /* Allows you to layer overlapping elements. */
-  z-index: 20; 
+  z-index: 20;
   color: #000;
   text-decoration: none
  }
 
 a.hideDisplay:hover{
  /* Allows you to layer overlapping elements. */
- z-index: 30; 
+ z-index: 30;
  }
 
 a.hideDisplay span.showDisplayOnHover{
@@ -198,35 +217,35 @@ a.hideDisplay span.showDisplayOnHover{
 
 /* This will only display itself when the
  * user hovers the mouse over the anchor. */
- a.hideDisplay:hover span.showDisplayOnHover{ 
+ a.hideDisplay:hover span.showDisplayOnHover{
  display: block;
  position: absolute;
  font-size: 18px;
- 
+
  /* This sets the height of a line of text in the box. */
  line-height: 15px;
- 
+
  /* These position the box where it needs to go. */
- top: 20px; 
+ top: 20px;
  left: -270px;
- 
+
  /* These adjust the size of the box when it appears. */
  width: 280px;
  padding: 20px;
- 
+
  border: 1px solid grey;
- background-color: white; 
- 
+ background-color: white;
+
  /* text color */
  color: #000000;
  text-align: left;
  }
 
 span.showBodyOfDisplayOnHover {
-	 font-size: 13px; 
+	 font-size: 13px;
 	 font-weight: normal;
 	 color: #444;
-	 line-height: 13px; 
+	 line-height: 13px;
  }
 
 /**/
@@ -276,13 +295,13 @@ span.showBodyOfDisplayOnHover {
     position: absolute; top: 0; bottom: 0;
     right: 23px;
     border: 2px solid #999999; border-radius: 28px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
+    right: 0px;
 }
 
 /**/
