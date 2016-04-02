@@ -69,7 +69,7 @@ form#searchform{
 }
 
 #infobtn{
-	
+
 	display: inline-block;
 	vertical-align: top;
 }
@@ -111,6 +111,184 @@ h6#autoplay{
 	color: grey;
 }
 
+
+
+.col-sm-5 button{
+	border:none;
+	background: none;
+	padding-top: 10px;
+}
+
+.col-sm-3 button{
+	border: none;
+	background:none;
+	padding-top: 18px;
+}
+
+#box{
+	width: 300px;
+	margin-right: 238px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	color:gray;
+}
+#box button{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#top_border{
+	border-top: 1px solid gray;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#media_pad{
+	padding-bottom: 10px;
+}
+
+#media_pad h2{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#thumb button{
+	color: gray;
+	padding-top: 6px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+#title h5{
+	display: inline-block;
+	padding-left: 164px;
+	font-size: 25px;
+	vertical-align: bottom;
+	margin-bottom: -5px;
+}
+
+#inline{
+	display: inline-block;
+}
+#inline2{
+	display: inline-block;
+	width: 200px;
+}
+
+#test button{
+	display: inline-block;
+}
+
+#inline2 a{
+	color: gray;
+}
+
+#inline2 i{
+	color: gray;
+	padding-left: 5px;
+}
+
+
+
+#taylor{
+	width: 300px;
+
+}
+
+
+#Show{
+	text-align: center;
+
+}
+#ShowMore{
+	border-color: white;
+}
+
+.btn btn-default{
+	right: auto;
+}
+.Hidden{
+	visibility: hidden;
+}
+.topic{
+
+}
+
+
+#left .media img{
+    width: 55px;
+    height: 55px;
+}
+#comment_box{
+    border: 1px solid silver;
+    height: 55px;
+    padding: 10px;
+    color: silver;
+    border-radius: 2px;
+}
+#line{
+    border-top: .1em solid silver;
+    margin: 25px 0px;
+}
+#comments_section{
+    margin-top: 20px;
+}
+#comments_section .media-body a:hover,.reply_content a:hover{
+	text-decoration: none;
+	color: #337ab7;
+}
+#top_comment ul{
+	padding: 10px;
+}
+.grey_text{
+	color: grey;
+	font-size: .8em;
+}
+.grey{
+	color: silver;
+}
+.blue_text{
+	color: #337ab7;
+}
+.reply_btn{
+    border: none;
+    padding: 0px;
+}
+#comments_section .respond_group a{
+	color: lightgrey;
+}
+#comments_section .media-middle {
+    vertical-align: top;
+}
+#comments_section .respond_group:hover a:hover{
+	color: darkgrey;
+}
+.reply_content{
+	padding-left: 2%;
+}
+
+.reply_content .media .media-left img {
+    width: 50px !important;
+    height: 50px !important;
+}
+#comments_section .media-body p{
+    margin: 2px 0px;
+}
+/*.fa-thumbs-up, .fa-thumbs-down{
+
+}*/
+
+/*@media (min-width: 1000px) {
+
+}
+*/
+#comments_section .report{
+	float: right;
+}
+#comments_section .report a:hover{
+	color: grey;
+}
+
 .media-body h5:hover{
 	color: #44A0D5;
 }
@@ -121,11 +299,11 @@ h6#autoplay{
 	height: 22px;
 }
 
-.fa {
+.fa-info-circle {
 	color: grey;
 }
 
-.fa:hover {
+.fa-info-circle:hover {
 	color: #625F5F;
 }
 
@@ -139,14 +317,14 @@ h6#autoplay{
  a.hideDisplay{
   position: relative; /* This makes everything work.*/
   /* Allows you to layer overlapping elements. */
-  z-index: 20; 
+  z-index: 20;
   color: #000;
   text-decoration: none
  }
 
 a.hideDisplay:hover{
  /* Allows you to layer overlapping elements. */
- z-index: 30; 
+ z-index: 30;
  }
 
 a.hideDisplay span.showDisplayOnHover{
@@ -155,35 +333,35 @@ a.hideDisplay span.showDisplayOnHover{
 
 /* This will only display itself when the
  * user hovers the mouse over the anchor. */
- a.hideDisplay:hover span.showDisplayOnHover{ 
+ a.hideDisplay:hover span.showDisplayOnHover{
  display: block;
  position: absolute;
  font-size: 18px;
- 
+
  /* This sets the height of a line of text in the box. */
  line-height: 15px;
- 
+
  /* These position the box where it needs to go. */
- top: 20px; 
+ top: 20px;
  left: -270px;
- 
+
  /* These adjust the size of the box when it appears. */
  width: 280px;
  padding: 20px;
- 
+
  border: 1px solid grey;
- background-color: white; 
- 
+ background-color: white;
+
  /* text color */
  color: #000000;
  text-align: left;
  }
 
 span.showBodyOfDisplayOnHover {
-	 font-size: 13px; 
+	 font-size: 13px;
 	 font-weight: normal;
 	 color: #444;
-	 line-height: 13px; 
+	 line-height: 13px;
  }
 
 /**/
@@ -233,13 +411,13 @@ span.showBodyOfDisplayOnHover {
     position: absolute; top: 0; bottom: 0;
     right: 23px;
     border: 2px solid #999999; border-radius: 28px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
+    right: 0px;
 }
 
 /**/
@@ -279,3 +457,4 @@ button#uploadbtn{
 button#uploadbtn:hover {
 	background-color: #C4C3C3;
 }
+
