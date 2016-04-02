@@ -2,8 +2,8 @@
 	background-color: #f5f5f5 !important;
 	width: 100% !important;
 	/*margin: 0px 30px !important;*/
-    padding: 0% 8% !important;
-    padding-top: 50px !important;
+    padding: 50px 8% !important;
+    /*padding-top: 50px !important;*/
 }
 
 form input#search{
@@ -246,6 +246,43 @@ h6#autoplay{
 	color: #337ab7;
 }
 
+.dropdown{
+    display: inline-block;
+}
+.navbar1{
+    margin-top: 15px;
+}
+#nav1{
+    list-style-type: none;
+}
+#nav1 li{
+     display: inline;
+     margin-right: 10px;
+
+}
+#nav1 a{
+    color: Black;
+}
+.navbar2{
+    margin-top: 10px;
+}
+#nav2{
+    list-style-type: none;
+}
+#nav2 li{
+     display: inline;
+     margin-right: 10px;
+     font-size: 12px;
+
+
+}
+#nav2 a{
+    color: #A9A9A9;
+}
+
+#footer{
+	margin:	auto;
+}
 /********* BEGIN COMMENTS SECTION CSS ************/
 #left .media img{
     width: 55px;
@@ -369,7 +406,7 @@ h6#autoplay{
  a.hideDisplay{
   position: relative; /* This makes everything work.*/
   /* Allows you to layer overlapping elements. */
-  z-index: 20;
+  z-index: 500000000;
   color: #000;
   text-decoration: none
  }
