@@ -1,4 +1,7 @@
-
+.container{
+	background-color: #f5f5f5;
+	width: 100% !important;
+}
 form input#search{
 	width: 425px;
 }
@@ -21,7 +24,7 @@ form input#search{
 }
 
 .well{
-	background: none;
+	background: none !important;
 }
 
 .sidebar{
@@ -227,7 +230,7 @@ h6#autoplay{
 #comments_section .respond_group a{
 	color: lightgrey;
 }
-#comments_section .media-middle {
+#comment .media-middle {
     vertical-align: top;
 }
 #comments_section .respond_group:hover a:hover{
@@ -235,7 +238,7 @@ h6#autoplay{
 }
 .reply_content{
 	padding-left: 2%;
-	padding-right: 0px;
+	padding-right: 0px !important;
 }
 
 .reply_content .media .media-left img {
@@ -254,9 +257,16 @@ h6#autoplay{
 #comment_form textarea{
 	width: 100%;
 }
+#comment_form .col-sm-2{
+	padding-right: 0px;
+    text-align: right;
+}
 #comment_form button {
-	float: right;
-    margin-right: -23px;
+	/*float: right;
+    margin-right: -23px;*/
+}
+#post_comment{
+	opacity: 0.4;
 }
 
 

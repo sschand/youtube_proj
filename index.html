@@ -6,7 +6,6 @@
   <link rel="stylesheet" style="text/css" href="index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
   <script type="text/javascript" href="index.js">
@@ -39,7 +38,7 @@
       </div>
 	</div>
 
-  	<div id="left" class="container col-sm-8">
+  	<div id="left" class="col-sm-8">
 
   		<div class="well" id="vid"><img id="video_img" src="img/video.png" alt="video"></div>
 
@@ -130,10 +129,9 @@
                 <!-- <div id="comment_box"> -->
                   <form id="comment_form" action="">                    
                       <textarea></textarea>
-                      <div class="col-sm-9"></div> 
-                      <div class="col-sm-3">
-                          <button id="cancel_button" class="btn btn-sm btn-default" type="buton">Cancel</button>
-                          <button id="post_comment" class="btn btn-sm btn-primary" type="submit">Post</button>
+                      <div class="col-sm-10"></div> 
+                      <div class="col-sm-2">                         <button id="cancel_button" class="btn btn-sm btn-default" type="buton">Cancel</button>
+                          <button disabled id="post_comment" class="btn btn-sm btn-primary" type="submit">Post</button>
                       </div>
                   </form>
                 <!-- </div> -->
