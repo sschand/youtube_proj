@@ -90,7 +90,7 @@
 
 
 
-      <div class="well">
+      <div id="comment" class="well">
         <div>
           <span><strong>COMMENTS •</strong> 126,373</span>
         </div>
@@ -106,6 +106,17 @@
                 <div id="comment_box">
                     <span>Add a public comment...</span>
                 </div>
+
+                <!-- <div id="comment_box"> -->
+                  <form id="comment_form" action="">                    
+                      <textarea></textarea>
+                      <div class="col-sm-9"></div> 
+                      <div class="col-sm-3">
+                          <button id="cancel_button" class="btn btn-sm btn-default" type="buton">Cancel</button>
+                          <button id="post_comment" class="btn btn-sm btn-primary" type="submit">Post</button>
+                      </div>
+                  </form>
+                <!-- </div> -->
             </div>
         </div>
 
@@ -159,6 +170,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -178,6 +190,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -197,6 +210,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -216,6 +230,7 @@
                               </div>
                               <div class="media-body">
                                   <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                   <p>I'm 97% sure she found a way into Narnia﻿</p>
                                   <div class="respond_group btn-group" role="group" aria-label="...">
                                       <a href=""></i>Reply • </a>
@@ -238,6 +253,7 @@
                             </div>
                             <div class="media-body">
                                 <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
                                 <p>I'm 97% sure she found a way into Narnia﻿</p>
                                 <div class="respond_group btn-group" role="group" aria-label="...">
                                     <a href=""></i>Reply • </a>
@@ -251,7 +267,29 @@
                     </div>
                 </div>
 
+
+
             </div>
+
+             <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object" src="img/channelicon.png" alt="commentor">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                    <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
+                    <p>I'm 97% sure she found a way into Narnia﻿</p>
+                    <div class="respond_group btn-group" role="group" aria-label="...">
+                        <a href=""></i>Reply • </a>
+                        <span class="blue_text"> 490 </span>
+                        <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                        <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                    </div>
+
+                </div>
+              </div>    
         </div>
 
 
@@ -490,6 +528,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
   $(document).ready(function(){
+
+      // Hover on reply link and buttons
       $(".respond_group").hover(function(){
           $(this +" a").css("color", "grey");
       }, function(){
@@ -504,6 +544,7 @@
       });
 
 
+      // Show all replies/ Hide all replies
       $(".view_replies").on("click", function(){
 
           var collapse_id = $(this).attr("href");
@@ -511,12 +552,17 @@
           var collapse_status = $(collapse_id).attr("class");
 
           if(collapse_status == "collapse"){
-              $(this).html("Hide all replies <i class='fa fa-chevron-up'></i>");
+              $(this).html("Hide all replies <i class='fa fa-chevron-up'></i>").css("color", "#337ab7");
 
           }else if(collapse_status == "collapse in"){
               var reply_org = $(this).attr("reply-org");
               $(this).html(reply_org);
           }
+      });
+
+      // Add new comment
+      $("#comment_box").on("click", function(){
+
       });
   });
 </script>

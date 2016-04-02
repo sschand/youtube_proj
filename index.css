@@ -98,7 +98,7 @@ h6#autoplay{
 
 }
 
-
+/********* BEGIN COMMENTS SECTION CSS ************/
 #left .media img{
     width: 55px;
     height: 55px;
@@ -117,6 +117,7 @@ h6#autoplay{
 #comments_section{
     margin-top: 20px;
 }
+
 #comments_section .media-body a:hover,.reply_content a:hover{
 	text-decoration: none;
 	color: #337ab7;
@@ -132,7 +133,7 @@ h6#autoplay{
 	color: silver;
 }
 .blue_text{
-	color: #337ab7;
+	color: #337ab7 !important;
 }
 .reply_btn{
     border: none;
@@ -149,6 +150,7 @@ h6#autoplay{
 }
 .reply_content{
 	padding-left: 2%;
+	padding-right: 0px;
 }
 
 .reply_content .media .media-left img {
@@ -158,21 +160,22 @@ h6#autoplay{
 #comments_section .media-body p{
     margin: 2px 0px;
 }
-/*.fa-thumbs-up, .fa-thumbs-down{
-
-}*/
-
-/*@media (min-width: 1000px) {
-
-}
-*/
 #comments_section .report{
 	float: right;
 }
 #comments_section .report a:hover{
 	color: grey;
 }
+#comment_form textarea{
+	width: 100%;
+}
+#comment_form button {
+	float: right;
+    margin-right: -23px;
+}
 
+
+/********** END COMMENTS SECTION CSS ***************/
 .media-body h5:hover{
 	color: #44A0D5;
 }
