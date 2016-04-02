@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
 	<title>youtube_prj</title>
 	<link rel="stylesheet" style="text/css" href="index.css">
@@ -16,6 +17,7 @@
 	    $('[data-toggle="popover"]').popover(); 
 		});
   	</script>
+
 </head>
 <body>
     <div class= "row header" data-position="fixed">
@@ -31,12 +33,27 @@
       <div class="col-sm-2 top">
       		<a href="" style="text-decoration:none"><button id="uploadbtn">Upload</button></a>
       		<a href="" style="text-decoration:none" id="bellbtn"><i class="fa fa-bell-o bell"></i></a>
-      		<img src="img/usericon.png" alt="UserIcon" id="usericonbtn">
-      </div>
-  </div>
+     		
+          <a href="">
+          <img src="img/usericon.png" alt="UserIcon" class="usericonbtn"
+          class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <ul class="dropdown-menu usericonmenu">
+                 <li id="userlistemail">BelieberPR@gmail.com</li>
+                 <li id="userlistphoto"><img src="img/photo.jpg" alt="Photo"></li>
+                 <li id="userlistname">Oscar Likes Bieber</li>
+                 <li id="userlistsubs">0 Subscribers</li>
+                 <li id="userlistcreator"><button id="usercreatorbtn">Creator Studio</button></li>
+                 <li id="userlistgear"><button id="userlistgearbtn"><i class="fa fa-cog userlistcog"></i></button></li>
+                 <li id="userlistfooter"><button id="addaccountbtn">Add account</button></li>
+                 <li id="userlistsignout"><button id="signoutbtn">Sign out</button></li>
+            </ul>
+          </a>
 
+       </div>    
+	</div>
 
   <div class="container maincont">
+
 
   	<div id="left" class="col-sm-8">
 
@@ -652,5 +669,6 @@
 
   });
 </script>
+
 </body>
 </html>
