@@ -630,6 +630,26 @@
            $(this).text("SHOW MORE");
         }
       });
+
+      // Post new comment
+      $("#post_comment").on("click", function(e){
+          e.preventDefault();
+
+          var postContent = $("#comment_text").val();
+
+          var content = '<div class="media"><div class="media-left media-middle"><a href="#"><img class="media-object" src="img/channelicon.png" alt="commentor"></a></div><div class="media-body"><a href="#">Sam Smith </a><a href="#" class="grey_text">1 second ago</a><span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span><p>' + postContent + '</p><div class="respond_group btn-group" role="group" aria-label="..."><a href=""></i>Reply • </a><span class="blue_text"> </span><a href=""> <i class="fa fa-thumbs-up"></i></a><a href=""> <i class="fa fa-thumbs-down"></i></a></div></div></div>';
+
+          $("#comments_section").prepend(content);
+          $("#comment_text").val('');
+          $("#cancel_button").click();
+      });
+    
+     // Add like
+      $(".fa-thumbs-up").on("click", function(e){
+        var count = $(this).after().text();
+        
+      });
+
   });
 </script>
 </body>
