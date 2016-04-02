@@ -1,6 +1,8 @@
 .maincont{
-	background-color: #f5f5f5;
+	background-color: #f5f5f5 !important;
 	width: 100% !important;
+	/*margin: 0px 30px !important;*/
+    padding: 0% 10% !important;
 }
 
 form input#search{
@@ -58,6 +60,7 @@ i.bell{
 
 .well{
 	background: none;
+	background-color: white !important;
 }
 
 .sidebar{
@@ -296,7 +299,8 @@ h6#autoplay{
 	height: 70px;
 }
 #comment_form textarea:focus {
-outline: 0;
+	outline: 0;
+
 }
 #comment_form .col-sm-2{
 	padding-right: 0px;
@@ -453,7 +457,8 @@ span.showBodyOfDisplayOnHover {
 .header{
 	height: 50px;
 	width: 100%;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
+	margin: 0px 0px 10px 0px !important;
 }
 
 
