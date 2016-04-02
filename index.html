@@ -473,9 +473,9 @@
 <script>
   $(document).ready(function(){
       $(".respond_group").hover(function(){
-          $(".respond_group a").css("color", "grey");
+          $(this +" a").css("color", "grey");
       }, function(){
-          $(".respond_group a").css("color", "lightgrey");
+          $(this +" a").css("color", "lightgrey");
       });
 
       $(".respond_group a").hover(function(){
@@ -499,9 +499,6 @@
               var reply_org = $(this).attr("reply-org");
               $(this).html(reply_org);
           }
-
-
-          // $(this).html()
       });
   });
 </script>
