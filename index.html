@@ -129,9 +129,10 @@
 
                 <!-- <div id="comment_box"> -->
                   <form id="comment_form" action="">                    
-                      <textarea></textarea>
+                      <textarea id="comment_text"></textarea>
                       <div class="col-sm-10"></div> 
-                      <div class="col-sm-2">                         <button id="cancel_button" class="btn btn-sm btn-default" type="buton">Cancel</button>
+                      <div class="col-sm-2">                         
+                          <button id="cancel_button" class="btn btn-sm btn-default" type="buton">Cancel</button>
                           <button disabled id="post_comment" class="btn btn-sm btn-primary" type="submit">Post</button>
                       </div>
                   </form>
@@ -581,7 +582,26 @@
 
       // Add new comment
       $("#comment_box").on("click", function(){
+          $(this).hide();
+          $(this).next().show();          
+      });
 
+       $("#cancel_button").on("click", function(e){
+        e.preventDefault();
+          $("#comment_form").hide();
+          $("#comment_box").show();
+      });
+
+      // When adding comments, check to see if text area is empty, if not empty, enable post button, otherwise don't allow blank posts
+      $("#comment_text").on("keydown",function(e){
+          var text = $(this).val();
+
+          if(text && text.length > 0){
+              $("#post_comment").css("opacity","1").css("cursor","pointer").prop("disabled", false); 
+
+          }else{
+            $("#post_comment").css("opacity","0.4").css("cursor","default").prop("disabled", true); 
+          }      
       });
   });
 </script>

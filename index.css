@@ -288,8 +288,15 @@ h6#autoplay{
 #comments_section .report a:hover{
 	color: grey;
 }
+#comment_form{
+	display: none;
+}
 #comment_form textarea{
 	width: 100%;
+	height: 70px;
+}
+#comment_form textarea:focus {
+outline: 0;
 }
 #comment_form .col-sm-2{
 	padding-right: 0px;
