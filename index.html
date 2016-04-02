@@ -8,7 +8,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script type="text/javascript" href="index.js"></script>
+  <script type="text/javascript" href="index.js">
+  	$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
+  	
+
+  </script>
 </head>
 <body>
   <div class="container">
@@ -33,28 +40,39 @@
 
   		<div class=" well">
   			<!-- <div class="col-sm-6"> -->
-	  			<div class="media" >
+
+
+
+
+	  			<div class="media" id="media_pad" >
 	  				<h2>Taylor Swift - Out Of The Woods</h2>
-					<a class="media-left" href="#">
-						<img class="media-object" src="img/channelicon.png" alt="channel">
-					</a>
-					<div class="media-body">
-						<h4 class="media-heading"><a href="#">channel name</a></h4>
-						<div class="btn-group" role="group" aria-label="...">
-							<button type="button" class="btn btn-danger">Subscribe</button>
-							<button type="button" class="btn btn-default">12,123,456,123</button>
+	  				<div id="title">
+						<a id="inline" class="media-left" href="#">
+						<div id="views">
+							<img class="media-object" src="img/channelicon.png" alt="channel"></a>
+							<div id="inline2" class="media-body">
+								<div id="taylor">
+								<h4 class="media-heading"><a id="taylor.hover" href="#">TaylorSwiftVEVO</a><i class="fa fa-check-square"></i></h4>
+								
+								<div class="btn-group" role="group" aria-label="...">
+									<button type="button" class="btn btn-danger">Subscribe</button>
+									<button type="button" class="btn btn-default">12,123,456,123</button>
+								</div>
+								</div>
+							</div>
+							<h5>120,495,094,039</h5>
 						</div>
 					</div>
 				</div> <!--end media-->
-				<div class="row">
-					<div class="col-sm-5">
-						<button><i class="fa fa-plus"></i> Add To</button>
-						<button><i class="fa fa-share"></i> Share</button>
-						<button><i class="fa fa-ellipsis-h"></i> More</button>
+				<div class="row" id="top_border">
+					<div class="col-sm-5" id="box">
+							<button data-toggle="tooltip" title="Add to"><i class="fa fa-plus"></i> Add To</button>
+							<button data-toggle="tooltip" title="Share"><i class="fa fa-share"></i> Share</button>
+							<button data-toggle="tooltip" title="More Action"><i class="fa fa-ellipsis-h"></i> More</button>			
 					</div>
-					<div class="col-sm-3">
-						<button><i class="fa fa-plus"></i> 123,123</button>
-						<button><i class="fa fa-plus"></i> 344</button>
+					<div class="col-sm-3" id="thumb">
+							<button data-toggle="tooltip" title="I like this"><i class="fa fa-thumbs-up"></i> 123,123</button>
+							<button data-toggle="tooltip" title="I dislike this"><i class="fa fa-thumbs-down"></i> 344</button>	
 					</div>
 				</div>
 
