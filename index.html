@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>youtube_prj</title>
-  <link rel="stylesheet" style="text/css" href="index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>youtube_prj</title>
+	<link rel="stylesheet" style="text/css" href="index.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="jquery.dropdown.css" />
+	<script type="text/javascript" src="jquery.dropdown.js"></script>
+
 
   <script type="text/javascript" href="index.js">
   	$(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
+    $('[data-toggle="popover"]').popover(); 
+  
 });
 
-  	
 
   </script>
 
@@ -34,7 +38,7 @@
       <div class="col-sm-2"></div>
       <div class="col-sm-2 top">
       		<button>Upload</button>
-      		<button id="bell"><i class="fa fa-bell-o"></i></button>
+      		<button id="bell"><i class="fa fa-bell-o" ></i></button>
       		<button><i class="fa fa-circle-thin"></i></button>
       </div>
 	</div>
@@ -45,27 +49,25 @@
 
   		<div class=" well">
   			<!-- <div class="col-sm-6"> -->
-
-
-
-
 	  			<div class="media" id="media_pad" >
 	  				<h2>Taylor Swift - Out Of The Woods</h2>
 	  				<div id="title">
 						<a id="inline" class="media-left" href="#">
 						<div id="views">
-							<img class="media-object" src="img/channelicon.png" alt="channel"></a>
+							<img class="media-object" src="img/channelicon.png" alt="channel" data-toggle="popover" data-trigger="hover" data-content="Taylor Swift Image"img/usericon.png""></a>
 							<div id="inline2" class="media-body">
 								<div id="taylor">
-								<h4 class="media-heading"><a id="taylor.hover" href="#">TaylorSwiftVEVO</a><i class="fa fa-check-square"></i></h4>
-								
+								<h4 class="media-heading">
+								<a href="#" data-toggle="popover" data-trigger="hover" data-content="Image of Taylor Swift! Image of Taylor Swift! Image of Taylor Swift!">TaylorSwiftVEVO</a><i class="fa fa-check-square"></i></h4>
 								<div class="btn-group" role="group" aria-label="...">
 									<button type="button" class="btn btn-danger">Subscribe</button>
 									<button type="button" class="btn btn-default">12,123,456,123</button>
 								</div>
 								</div>
 							</div>
+							<div id="h5head">
 							<h5>120,495,094,039</h5>
+							</div>
 						</div>
 					</div>
 				</div> <!--end media-->
@@ -537,6 +539,7 @@
               var reply_org = $(this).attr("reply-org");
               $(this).html(reply_org);
           }
+
 
 
           // $(this).html()
