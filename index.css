@@ -2,7 +2,7 @@
 	background-color: #f5f5f5 !important;
 	width: 100% !important;
 	/*margin: 0px 30px !important;*/
-    padding: 0% 10% !important;
+    padding: 0% 8% !important;
 }
 
 form input#search{
@@ -204,24 +204,38 @@ h6#autoplay{
 }
 
 
-#Show{
+#show{
 	text-align: center;
 
 }
-#ShowMore{
+/*#showMore{
 	border-color: white;
 }
-
-.btn btn-default{
+*/
+.btn .btn-default{
 	right: auto;
 }
-.Hidden{
-	visibility: hidden;
+.moreinfo{
+	display: none;
+	padding: 2% 0 0 0;
 }
+
 .topic{
 
 }
 
+#publishon .line{
+	margin-bottom: 2px;
+	margin-top: 7px;
+}
+#publishon a{
+	text-decoration: none;
+	color: black;
+}
+#publishon a:hover{
+	text-decoration: underline;
+	color: #337ab7;
+}
 
 /********* BEGIN COMMENTS SECTION CSS ************/
 #left .media img{
@@ -235,7 +249,7 @@ h6#autoplay{
     color: silver;
     border-radius: 2px;
 }
-#line{
+.line{
     border-top: .1em solid silver;
     margin: 25px 0px;
 }
