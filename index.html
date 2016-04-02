@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
   <script type="text/javascript" href="index.js">
   	$(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
@@ -16,6 +17,9 @@
   	
 
   </script>
+
+
+
 </head>
 <body>
   <div class="container">
@@ -35,7 +39,8 @@
       </div>
 	</div>
 
-  	<div class="container col-sm-8">	
+  	<div id="left" class="container col-sm-8">
+
   		<div class="well" id="vid"><img id="video_img" src="img/video.png" alt="video"></div>
 
   		<div class=" well">
@@ -82,20 +87,228 @@
 
   		</div>
 
-      <div class="well">
-      seema
+      <div class="well" id = "publishon">
+      <!-- seema -->
+        <h4>Published on Dec 31, 2015</h4>
+        <p> Check out Taylor's new vidoe "Out of the Woods" off her multiplatinum release 1989 available now on iTunes
+        <a href=" ">http://www.smarturl.it/TS1989​</a>
+        </p>
+        <div id= "Show">
+        <button class="btn btn-default"  id="ShowMore" data-toggle="collapse" drole="button">Show More</button>
+        </div>
       </div>
+
+       <div class ="Hidden">
+         <a href="#"> http://vevo.ly/03TNT0</a>
+         <p class="Category"><b>Category</b> <span class= "data"> Music</span></p>
+         <p class="License"><b>License</b><span class= "data"> Standard You Tube License</span></p>
+         <p class="Music"><b>Music</b><span class=" data"> "Out of The Woods" by Taylor Swift Listen add-free with You Tube red</span></p>
+       </div>
+
+
+
+
+
+
       <div class="well">
-      comments
-      </div>
+        <div>
+          <span><strong>COMMENTS •</strong> 126,373</span>
+        </div>
+
+        <!-- Add new comments section -->
+        <div class="media">
+          <div class="media-left media-middle">
+              <a href="#">
+                  <img class="media-object" src="img/channelicon.png" alt="current user">
+              </a>
+            </div>
+            <div class="media-body">
+                <div id="comment_box">
+                    <span>Add a public comment...</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="line"></div>
+
+        <!-- Top comments btn group -->
+        <div id="top_comment" class="btn-group">
+            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Top comments <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li>Top comments</li>
+                <li>Newest first</li>
+            </ul>
+        </div>
+
+
+        <div id="comments_section">
+            <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object" src="img/channelicon.png" alt="commentor">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                    <span class="report"><a href="#"><i class=" grey fa fa-ellipsis-v"></i></a></span>
+                    <p>I'm 97% sure she found a way into Narnia﻿</p>
+                    <div class="respond_group btn-group" role="group" aria-label="...">
+                        <a href=""></i>Reply • </a>
+                        <span class="blue_text"> 490 </span>
+                        <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                        <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-1"></div>
+                <div class="reply_content col-sm-11">
+                    <p><a class="view_replies" role="button" data-toggle="collapse" href="#reply1" aria-expanded="false" aria-controls="reply1" reply-org="View all 26 replies <i class='fa fa-chevron-down'></i>"</p>
+                    View all 26 replies <i class="fa fa-chevron-down"></i>
+                    </a>
+
+                    <div class="collapse" id="reply1">
+                        <div class="">
+                            <div class="media">
+                              <div class="media-left media-middle">
+                                  <a href="#">
+                                    <img class="media-object" src="img/channelicon.png" alt="commentor">
+                                  </a>
+                              </div>
+                              <div class="media-body">
+                                  <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <p>I'm 97% sure she found a way into Narnia﻿</p>
+                                  <div class="respond_group btn-group" role="group" aria-label="...">
+                                      <a href=""></i>Reply • </a>
+
+                                      <span class="blue_text"> 490 </span>
+                                      <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                                      <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="media">
+                              <div class="media-left media-middle">
+                                  <a href="#">
+                                    <img class="media-object" src="img/channelicon.png" alt="commentor">
+                                  </a>
+                              </div>
+                              <div class="media-body">
+                                  <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <p>I'm 97% sure she found a way into Narnia﻿</p>
+                                  <div class="respond_group btn-group" role="group" aria-label="...">
+                                      <a href=""></i>Reply • </a>
+
+                                      <span class="blue_text"> 490 </span>
+                                      <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                                      <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="media">
+                              <div class="media-left media-middle">
+                                  <a href="#">
+                                    <img class="media-object" src="img/channelicon.png" alt="commentor">
+                                  </a>
+                              </div>
+                              <div class="media-body">
+                                  <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <p>I'm 97% sure she found a way into Narnia﻿</p>
+                                  <div class="respond_group btn-group" role="group" aria-label="...">
+                                      <a href=""></i>Reply • </a>
+
+                                      <span class="blue_text"> 490 </span>
+                                      <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                                      <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="media">
+                              <div class="media-left media-middle">
+                                  <a href="#">
+                                    <img class="media-object" src="img/channelicon.png" alt="commentor">
+                                  </a>
+                              </div>
+                              <div class="media-body">
+                                  <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                  <p>I'm 97% sure she found a way into Narnia﻿</p>
+                                  <div class="respond_group btn-group" role="group" aria-label="...">
+                                      <a href=""></i>Reply • </a>
+
+                                      <span class="blue_text"> 490 </span>
+                                      <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                                      <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="newest_reply">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                  <img class="media-object" src="img/channelicon.png" alt="commentor">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="#">Sam Smith </a><a href="#" class="grey_text">6 days ago</a>
+                                <p>I'm 97% sure she found a way into Narnia﻿</p>
+                                <div class="respond_group btn-group" role="group" aria-label="...">
+                                    <a href=""></i>Reply • </a>
+
+                                    <span class="blue_text"> 490 </span>
+                                    <a href=""> <i class="fa fa-thumbs-up"></i></a>
+                                    <a href=""> <i class="fa fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+
+
+
   	</div>
 
-  	<div class="well col-sm-4">
+  	<div class="well col-sm-4  sidebar">
       <div id="sideheader">
-        <h6 id="upnext">Up Next</h6>
-        <h6 id="autoplay">Autoplay</h6>
+          <div id="headertext">
+            <h6 id="upnext">Up Next</h6>
+            <h6 id="autoplay">Autoplay</h6>
+          </div>
+           <div id="infobtn" onmouseover="nhpup.popup('testtest');">
+
+            <a class="hideDisplay">
+            <i class="fa fa-info-circle"></i>
+              <span class="showDisplayOnHover">
+              <span class="showBodyOfDisplayOnHover">
+              When autoplay is enabled, a suggested video will automatically play next.
+              </span>
+              </span>
+            </a>
+           </div>
+        <div id="switchbox">
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+              <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+        </div>
       </div>
-      
+
       <div class="media">
         <a class="pull-left" href="">
           <img class = "media-object" src="img/side/side1.png" alt="side1">
@@ -116,7 +329,7 @@
         <a class="media-body" href="" style="text-decoration:none">
             <h5 class="media-heading">Mix - Taylor Swift - Out of the Woods</h5>
             <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h6>327,457,901 views</h6>
         </a>
       </div>
 
@@ -127,7 +340,7 @@
         <a class="media-body" href="" href="" style="text-decoration:none">
             <h5 class="media-heading">Taylor Swift - Out of the Woods - The Making Of</h5>
             <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h6>116,128,390 views</h6>
         </a>
       </div>
 
@@ -138,7 +351,7 @@
         <a class="media-body" href="" href="" style="text-decoration:none">
             <h5 class="media-heading">Taylor Swift - Style</h5>
             <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h6>123,976,l32 views</h6>
         </a>
       </div>
 
@@ -149,7 +362,7 @@
         <a class="media-body" href="" href="" style="text-decoration:none">
             <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
             <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h6>235,893,672 views</h6>
         </a>
       </div>
 
@@ -158,9 +371,9 @@
           <img class = "media-object" src="img/side/side6.png" alt="side6">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Children are terrible at drawing</h5>
+            <h6>TheWorstChildren</h6>
+            <h6>1,124,155 views</h6>
         </a>
       </div>
 
@@ -169,9 +382,9 @@
           <img class = "media-object" src="img/side/side7.png" alt="side7">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Look at this circled thing</h5>
+            <h6>CirclesAndArrows</h6>
+            <h6>16,962,125 views</h6>
         </a>
       </div>
 
@@ -180,106 +393,106 @@
           <img class = "media-object" src="img/side/side8.png" alt="side8">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Oh shit my hair is running away</h5>
+            <h6>HairEmergency</h6>
+            <h6>145,124 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side9.png" alt="side9">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">I think someone farted</h5>
+            <h6>HashtagAwkward</h6>
+            <h6>54,191 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side10.png" alt="side10">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Look at all this shit I own</h5>
+            <h6>ThisAllMine</h6>
+            <h6>1,124,685 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side11.png" alt="side11">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">God I hate winter</h5>
+            <h6>WinterSucks</h6>
+            <h6>745,446 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side12.png" alt="side12">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Holy shit a red ball</h5>
+            <h6>OldManYellsAtBalls</h6>
+            <h6>82,010 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side13.png" alt="side13">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Yo girl check out my mixtape</h5>
+            <h6>KidsReactToMixtapes</h6>
+            <h6>14,123 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side14.png" alt="side14">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
             <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
             <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h6>252,235,555 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side15.png" alt="side15">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Celebs react to nothing</h5>
+            <h6>CelebsReact</h6>
+            <h6>4,126,414,422 views</h6>
         </a>
       </div>
 
       <div class="media">
         <a class="pull-left" href="">
-          <img class = "media-object" src="img/side/side5.png" alt="side5">
+          <img class = "media-object" src="img/side/side16.png" alt="side16">
         </a>
         <a class="media-body" href="" href="" style="text-decoration:none">
-            <h5 class="media-heading">Taylor Swift - Bad Blood ft. Kendrick Lamar</h5>
-            <h6>TaylorSwiftVEVO</h6>
-            <h6>416,902,010 views</h6>
+            <h5 class="media-heading">Pictures of people staring (Part 2)</h5>
+            <h6>StareOfficial</h6>
+            <h6>13 views</h6>
         </a>
       </div>
 
-  	
+
 
     </div>   <!-- end of sidebar -->
 
 
-  	
+
 
   </div> <!-- end of container -->
 
@@ -295,5 +508,40 @@
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+      $(".respond_group").hover(function(){
+          $(".respond_group a").css("color", "grey");
+      }, function(){
+          $(".respond_group a").css("color", "lightgrey");
+      });
+
+      $(".respond_group a").hover(function(){
+          $(this).css("color", "grey");
+          $(this).siblings().css("color", "darkgrey");
+      }, function(){
+          $(this).css("color", "lightgrey");
+      });
+
+
+      $(".view_replies").on("click", function(){
+
+          var collapse_id = $(this).attr("href");
+
+          var collapse_status = $(collapse_id).attr("class");
+
+          if(collapse_status == "collapse"){
+              $(this).html("Hide all replies <i class='fa fa-chevron-up'></i>");
+
+          }else if(collapse_status == "collapse in"){
+              var reply_org = $(this).attr("reply-org");
+              $(this).html(reply_org);
+          }
+
+
+          // $(this).html()
+      });
+  });
+</script>
 </body>
 </html>

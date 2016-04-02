@@ -23,18 +23,43 @@ form input#search{
 .well{
 	background: none;
 }
+
+.sidebar{
+	min-width: 380px;
+}
+
 #sideheader{
 	margin-top: 0;
+}
+
+#sideheader h6{
+	margin-left: 15px;
+	height: 10px;
+}
+
+#infobtn{
+
+	display: inline-block;
+	vertical-align: top;
+}
+
+#headertext{
+	vertical-align: top;
+	display: inline-block;
+	margin-top: -6px;
 }
 
 #upnext{
 	display: inline-block;
 	width: 100px;
+	font-weight: bold;
 }
 
-#autoplay{
+h6#autoplay{
 	display: inline-block;
-	margin-left: 120px;
+	margin-left: 90px;
+	color: grey;
+	font-weight: bold;
 }
 
 .media img{
@@ -45,6 +70,7 @@ form input#search{
 .media-body h5{
 	font-weight: bold;
 	font-size: 90%;
+	color: black;
 }
 
 .media-body h6{
@@ -53,6 +79,7 @@ form input#search{
 	font-size: 75%;
 	color: grey;
 }
+
 
 
 .col-sm-5 button{
@@ -136,4 +163,233 @@ form input#search{
 	width: 300px;
 
 }
+
+
+#Show{
+	text-align: center;
+
+}
+#ShowMore{
+	border-color: white;
+}
+
+.btn btn-default{
+	right: auto;
+}
+.Hidden{
+	visibility: hidden;
+}
+.topic{
+
+}
+
+
+#left .media img{
+    width: 55px;
+    height: 55px;
+}
+#comment_box{
+    border: 1px solid silver;
+    height: 55px;
+    padding: 10px;
+    color: silver;
+    border-radius: 2px;
+}
+#line{
+    border-top: .1em solid silver;
+    margin: 25px 0px;
+}
+#comments_section{
+    margin-top: 20px;
+}
+#comments_section .media-body a:hover,.reply_content a:hover{
+	text-decoration: none;
+	color: #337ab7;
+}
+#top_comment ul{
+	padding: 10px;
+}
+.grey_text{
+	color: grey;
+	font-size: .8em;
+}
+.grey{
+	color: silver;
+}
+.blue_text{
+	color: #337ab7;
+}
+.reply_btn{
+    border: none;
+    padding: 0px;
+}
+#comments_section .respond_group a{
+	color: lightgrey;
+}
+#comments_section .media-middle {
+    vertical-align: top;
+}
+#comments_section .respond_group:hover a:hover{
+	color: darkgrey;
+}
+.reply_content{
+	padding-left: 2%;
+}
+
+.reply_content .media .media-left img {
+    width: 50px !important;
+    height: 50px !important;
+}
+#comments_section .media-body p{
+    margin: 2px 0px;
+}
+/*.fa-thumbs-up, .fa-thumbs-down{
+
+}*/
+
+/*@media (min-width: 1000px) {
+
+}
+*/
+#comments_section .report{
+	float: right;
+}
+#comments_section .report a:hover{
+	color: grey;
+}
+
+.media-body h5:hover{
+	color: #44A0D5;
+}
+
+#switchbox{
+	display: inline-block;
+	width: 60px;
+	height: 22px;
+}
+
+.fa-info-circle {
+	color: grey;
+}
+
+.fa-info-circle:hover {
+	color: #625F5F;
+}
+
+
+
+
+/**/
+/*info button hover popup*/
+/**/
+
+ a.hideDisplay{
+  position: relative; /* This makes everything work.*/
+  /* Allows you to layer overlapping elements. */
+  z-index: 20;
+  color: #000;
+  text-decoration: none
+ }
+
+a.hideDisplay:hover{
+ /* Allows you to layer overlapping elements. */
+ z-index: 30;
+ }
+
+a.hideDisplay span.showDisplayOnHover{
+ display: none
+}
+
+/* This will only display itself when the
+ * user hovers the mouse over the anchor. */
+ a.hideDisplay:hover span.showDisplayOnHover{
+ display: block;
+ position: absolute;
+ font-size: 18px;
+
+ /* This sets the height of a line of text in the box. */
+ line-height: 15px;
+
+ /* These position the box where it needs to go. */
+ top: 20px;
+ left: -270px;
+
+ /* These adjust the size of the box when it appears. */
+ width: 280px;
+ padding: 20px;
+
+ border: 1px solid grey;
+ background-color: white;
+
+ /* text color */
+ color: #000000;
+ text-align: left;
+ }
+
+span.showBodyOfDisplayOnHover {
+	 font-size: 13px;
+	 font-weight: normal;
+	 color: #444;
+	 line-height: 13px;
+ }
+
+/**/
+/*end of info button hover popup*/
+/**/
+
+
+
+/**/
+/*toggle switch madness starts*/
+/**/
+
+.onoffswitch {
+    position: relative; width: 40px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 28px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 13px; padding: 0; line-height: 13px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #3975C4; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 15px; height: 15px; margin: 1px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 23px;
+    border: 2px solid #999999; border-radius: 28px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/**/
+/*toggle switch madness ends/
+/**/
 
