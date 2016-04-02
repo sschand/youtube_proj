@@ -13,22 +13,24 @@
 
 </head>
 <body>
-  <div class="container">
-    <div class= "row" data-position="fixed">
-      <div class="col-sm-2"><i class="fa fa-bars"><a href="#"><img src="img/logo.png" alt="icon"></a></i></div>
-      <div class="col-sm-6 top">
-      	<form>
+  <div class="container maincont">
+    <div class= "row header" data-position="fixed">
+      <div class="col-sm-2"><i class="fa fa-bars headerbars"><a href="#"><img src="img/logo.png" alt="icon" id="ytlogo">
+        </a></i></div>
+      <div class="col-sm-6">
+      	<form id="searchform">
 	      	<input id="search" type="text">
-	      	<button><i class="fa fa-search"></i></button>
+	      	<button id="searchbtn"><i class="fa fa-search spyglass"></i></button>
       	</form>
       </div>
       <div class="col-sm-2"></div>
       <div class="col-sm-2 top">
-      		<button>Upload</button>
-      		<button id="bell"><i class="fa fa-bell-o"></i></button>
+      		<a href="" style="text-decoration:none;"><button id="uploadbtn">Upload</button></a>
+      		<i class="fa fa-bell-o bell"></i>
       		<button><i class="fa fa-circle-thin"></i></button>
       </div>
 	</div>
+
 
   	<div class="container col-sm-8">	
   		<div class="well" id="vid"><img id="video_img" src="img/video.png" alt="video"></div>

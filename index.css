@@ -1,14 +1,45 @@
-
-form input#search{
-	width: 425px;
+.maincont{
+	width: 100%;
 }
 
-#bell{
+form input#search{
+	width: 582px;
+	height: 30px;
+	display: inline;
+	margin-right: -5px;
+	margin-top: 12px;
+	border-radius: 1px solid grey;
+	border-style: groove;
+	vertical-align: top;
+}
+
+#searchbtn{
+	height: 29px;
+	width: 66px;
+	margin-top: 12px;
+}
+
+i.spyglass{
+	display: inline;
+	width: auto;
+	height: 30px;
+}
+
+form#searchform{
+	padding-left: 5px;
+	width: 660px;
+}
+
+
+.bell{
 	border: none;
+	margin-right: 18px;
+	margin-left: 18px;
 }
 
 .top{
-	margin-top: 15px;
+	float: right;
+	margin-top: 12px;
 }
 
 #vid{
@@ -214,3 +245,37 @@ span.showBodyOfDisplayOnHover {
 /**/
 /*toggle switch madness ends/
 /**/
+
+
+.header{
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid grey;
+	margin-bottom: 10px;
+}
+
+
+img#ytlogo{
+	width:74px;
+	height:40px;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-left: 10px;
+}
+
+i.headerbars{
+	margin-top: 10px;
+}
+
+button#uploadbtn{
+	font-size: 80%;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 4px 8px;
+	border: 0xp groove grey;
+	color: black;
+}
+
+button#uploadbtn:hover {
+	background-color: #C4C3C3;
+}
